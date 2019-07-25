@@ -9,8 +9,8 @@ class Layout extends React.Component {
     }
 
     clickSidedrawer = () => {
-        this.setState({
-            toggleSidedrawer: !this.state.toggleSidedrawer
+        this.setState( prevState => {
+            return {toggleSidedrawer: !prevState.toggleSidedrawer}
         })
     }
 
